@@ -1,0 +1,63 @@
+int pinRed = 13;
+int pinGreen = 10;
+int pinBlue = 6; 
+int fiveTimesFast = 200;
+int tenTimesSlow = 500;
+int realSlow = 1000;
+
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(pinRed, OUTPUT);
+pinMode(pinGreen, OUTPUT);
+pinMode(pinBlue, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(pinRed, HIGH);
+delay(fiveTimesFast);
+digitalWrite(pinRed, LOW);
+delay(fiveTimesFast);
+
+digitalWrite(pinRed, HIGH);
+delay(fiveTimesFast);
+digitalWrite(pinRed, LOW);
+delay(fiveTimesFast);
+
+digitalWrite(pinRed, HIGH);
+delay(fiveTimesFast);
+digitalWrite(pinRed, LOW);
+delay(fiveTimesFast);
+
+digitalWrite(pinGreen, HIGH);
+delay(tenTimesSlow);
+digitalWrite(pinGreen, LOW);
+delay(tenTimesSlow);
+
+digitalWrite(pinGreen, HIGH);
+delay(tenTimesSlow);
+digitalWrite(pinGreen, LOW);
+delay(tenTimesSlow);
+
+digitalWrite(pinGreen, HIGH);
+delay(tenTimesSlow);
+digitalWrite(pinGreen, LOW);
+delay(tenTimesSlow);
+
+digitalWrite(pinBlue, HIGH);
+delay(realSlow);
+digitalWrite(pinBlue, LOW);
+delay(realSlow);
+
+digitalWrite(pinBlue, HIGH);
+delay(realSlow);
+digitalWrite(pinBlue, LOW);
+delay(realSlow);
+
+digitalWrite(pinBlue, HIGH);
+delay(realSlow);
+digitalWrite(pinBlue, LOW);
+delay(realSlow);
+}
+

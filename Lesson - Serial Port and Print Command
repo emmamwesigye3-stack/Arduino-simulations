@@ -1,0 +1,30 @@
+int j = 1;
+int waitT = 750;
+String myString = " + ";
+int x = 12;
+int y = 11;
+int z;
+float pi = 3.14;
+float r = 2;
+float area;
+String messi1 = "A circle with radius ";
+String messi2 = " Has the area of ";
+String messi3 = ".";
+
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly
+area = pi * r*r;
+Serial.print(messi1);
+Serial.print(r);
+Serial.print(messi2);
+Serial.print(area);
+Serial.println(messi3);
+
+delay(waitT);
+r = r + .5;
+}

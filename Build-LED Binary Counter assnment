@@ -1,0 +1,135 @@
+int pinThirteen = 13;
+int pinEleven = 11;
+int pinEight = 8;
+int pinFive = 5;
+int extraDelay = 1000;
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(pinThirteen, OUTPUT);
+pinMode(pinEleven, OUTPUT);
+pinMode(pinEight, OUTPUT);
+pinMode(pinFive, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+digitalWrite(pinFive, LOW);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, LOW);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, LOW);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, LOW);
+delay(extraDelay);
+
+
+digitalWrite(pinFive, HIGH);
+digitalWrite(pinEight, HIGH);
+digitalWrite(pinEleven, HIGH);
+digitalWrite(pinThirteen, HIGH);
+delay(extraDelay);
+}
+
+
+
+
+
+
+
+

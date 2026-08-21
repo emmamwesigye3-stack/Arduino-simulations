@@ -1,0 +1,28 @@
+int readPin = A2;
+int redPin = 13;
+int delayTime = 500;
+int potVal;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(A2, INPUT);
+pinMode(13, OUTPUT);
+Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+potVal = analogRead(readPin);
+Serial.println(potVal);
+delay(delayTime);
+while(potVal > 1000){
+  digitalWrite(redPin, HIGH);
+  potVal = analogRead(readPin);
+  delay(delayTime);
+  Serial.println(potVal);
+  digitalWrite(redPin, LOW);
+}
+
+
+
+}

@@ -1,0 +1,43 @@
+// C++ code
+//
+
+int redPin = 2;
+int greenPin = 3;
+int bluePin = 4;
+String msg = "Which LED do you want to light up ?";
+String myColour;
+
+void setup()
+{
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println(msg);
+  while(Serial.available() == 0){
+    
+  }
+  myColour = Serial.readString();
+  
+  if (myColour == "Red"){
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, LOW);
+  }
+  
+    if (myColour == "Green"){
+    digitalWrite(greenPin, HIGH);
+    digitalWrite(redPin, LOW);
+    digitalWrite(bluePin, LOW);
+  }
+  
+    if (myColour == "Blue"){
+    digitalWrite(bluePin, HIGH);
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, LOW );
+  }
+}

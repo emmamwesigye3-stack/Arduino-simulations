@@ -1,0 +1,25 @@
+// C++ code
+//
+int buzzerPin = 8;
+int readPin = A2;
+int potVal;
+
+void setup()
+{
+	pinMode(buzzerPin, OUTPUT);
+  	pinMode(readPin, INPUT);
+  	Serial.begin(9600);
+  
+}
+
+void loop(){
+potVal = analogRead(readPin);
+  Serial.println(potVal);
+  delay(1000);
+  if (potVal > 1000){
+    digitalWrite(buzzerPin, HIGH);
+  }
+  if (potVal < 1000){
+    digitalWrite(buzzerPin, LOW);
+  }
+}
